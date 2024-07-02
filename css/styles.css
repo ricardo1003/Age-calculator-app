@@ -11,12 +11,12 @@ body{
 }
 main{
     background-color: #fff;
-    padding: 3rem 1rem;
-    border-radius: 1rem 1rem 5rem;
-    -webkit-border-radius: 1rem 1rem 5rem;
-    -moz-border-radius: 1rem 1rem 5rem;
-    -ms-border-radius: 1rem 1rem 5rem;
-    -o-border-radius: 1rem 1rem 5rem;
+    padding: 3rem 1.5rem;
+    border-radius: 1rem 1rem 7rem;
+    -webkit-border-radius: 1rem 1rem 7rem;
+    -moz-border-radius: 1rem 1rem 7rem;
+    -ms-border-radius: 1rem 1rem 7rem;
+    -o-border-radius: 1rem 1rem 7rem;
 }
 form{
     display: flex;
@@ -76,7 +76,14 @@ button{
     -o-border-radius: 100px;
 }
 
-
+.results p{
+    margin: 0;
+    font-size: 50px;
+    font-weight: 800;
+}
+.results p span{
+    color: hsl(259, 100%, 65%);
+}
 
 
 
