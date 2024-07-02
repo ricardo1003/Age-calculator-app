@@ -51,6 +51,10 @@ input{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+input:focus{
+    outline: none;
+    border: 2px solid hsl(259, 100%, 65%);
+}
 .line{
     position: absolute;
     display: block;
@@ -74,6 +78,12 @@ button{
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
+}
+button.clicked{
+    background: hsl(0, 0%, 8%) url("../assets/images/icon-arrow.svg");
+    background-position: center;
+    background-size: 45%;
+    background-repeat: no-repeat;
 }
 
 .results p{
