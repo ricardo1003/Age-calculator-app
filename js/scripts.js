@@ -1,3 +1,14 @@
+const form = document.getElementsByTagName("form")[0]
+const dayInput = form[0]
+const monthInput = form[1]
+const yearInput = form[2]
+const button = form[3]
+
+const yearOutput = document.getElementsByClassName("result")[0]
+const monthOutput = document.getElementsByClassName("result")[1]
+const dayOutput = document.getElementsByClassName("result")[2]
+
+
 const presentDay = (new Date()).getDay()
 const presentMonth = (new Date()).getMonth()+1
 const presentYear = (new Date()).getFullYear()
@@ -25,7 +36,24 @@ function calculateAge(day, month, year){
     calculatedYears = years
 }
 
-calculateAge(11,5,2008)
+button.addEventListener("click", ()=>{
+    let success = false
+    for(let i=0; i< form.length -1; i++){
+        if(form[i].value.trim() !== ""){
+            success = true
+        }else{
+            console.log("oye >:(")
+            success = false
+        }
+    }
+    if(success){
+        calculateAge(dayInput.value , monthInput.value , yearInput.value)
+        yearOutput.innerHTML = calculatedYears
+        monthOutput.innerHTML = calculatedMonths
+        dayOutput.innerHTML = calculatedDays
 
-console.log(`${calculatedYears} years, ${calculatedMonths} months, ${calculatedDays} days.`)
+        console.log(`${calculatedYears} years, ${calculatedMonths} months, ${calculatedDays} days.`)
+    }
+    
+})
 
