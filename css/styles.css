@@ -44,15 +44,10 @@ label span{
     font-style: italic;
     font-size: .75em;
 }
-label span.emptyInput{
+label span.invalidValue{
     display: inline;
 }
-label span.invalidInput{
-    display: inline;
-}
-label span.invalidDate{
-    display: inline;
-}
+
 label.incorrectInput{
     color: hsl(0, 100%, 67%);
 }
