@@ -6,10 +6,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: hsl(0, 0%, 94%);
     font-family: "Poppins";
 }
 main{
+    width: 100%;
+    max-width: 600px;
     background-color: #fff;
     padding: 3rem 1.5rem;
     border-radius: 1rem 1rem 7rem;
@@ -28,10 +31,11 @@ form .labels{
     width: 100%;
     margin-bottom: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 20px;
 }
 label{
+    max-width: 150px;
     color: hsl(0, 1%, 44%);
     font-weight: 700;
     font-size: 0.75em;
@@ -90,19 +94,19 @@ button{
     background-repeat: no-repeat;
     border: none;
     border-radius: 100px;
+    cursor: pointer;
 
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
 }
-button.clicked{
+button:focus{
     background: hsl(0, 0%, 8%) url("../assets/images/icon-arrow.svg");
     background-position: center;
     background-size: 45%;
     background-repeat: no-repeat;
 }
-
 .results p{
     margin: 0;
     font-size: 50px;
@@ -112,9 +116,11 @@ button.clicked{
     color: hsl(259, 100%, 65%);
 }
 
-
-
-
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width:560px){
+    button{
+        align-self: flex-end;
+    }
+}
