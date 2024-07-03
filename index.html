@@ -16,14 +16,21 @@
   <main>
     <form>
       <div class="labels">
-        <label for="day">DAY
+        <label for="day" class="incorrectInput">DAY
           <input type="number" id="day" placeholder="DD">
+          <span class="emptyInput">This field is required</span>
+          <span class="invalidInput">Must be a valid day</span>
+          <span class="invalidDate">Must be a valid date</span>
         </label>
-        <label for="month">MONTH
+        <label for="month" class="incorrectInput">MONTH
           <input type="number" id="month" placeholder="MM">
+          <span class="emptyInput">This field is required</span>
+          <span class="invalidInput">Must be a valid month</span>
         </label>
-        <label for="year">YEAR
+        <label for="year" class="incorrectInput">YEAR
           <input type="number" id="year" placeholder="YYYY">
+          <span class="emptyInput">This field is required</span>
+          <span class="invalidInput">Must be in the past</span>
         </label>
       </div>
       <div class="line"></div>
